@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KLA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello">Hello blank fragment</string>
+    <string name="introduction">Kotlin is a relatively new programming language developed by JetBrains for modern multiplatform applications. Nowadays, Kotlin is widely used for Android development instead of Java. It is because Kotlin is safe, concise, and fun to read and write. The content is divided into various topics with simple and useful examples</string>
+    <string name="Variables">.</string>
+    <string name="datatypes">Data type (basic type) refers to type and size of data associated with variables and functions. Data type is used for declaration of memory location of variable which determines the features of data. In Kotlin, everything is an object, which means we can call member function and properties on any variable.Kotlin built in data type are categorized as following different categories: Number
+Character, Boolean,Array, String</string>
+    <string name="Operators">Operators are special characters which perform operation on operands (values or variable).There are various kind of operators available in Kotlin. Arithmetic operator
+Relation , Assignment operator, Unary operator, Bitwise operation, Logical operator, Arithmetic Operator. Arithmetic operators are used to perform basic mathematical operations such as addition (+), subtraction (-), multiplication (*), division (/) etc.Example of Arithmetic Operator
+Relation operator shows the relation and compares between operands. </string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.kla.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_topicFragment"
+            app:destination="@id/topicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.kla.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.example.kla.TopicFragment"
+        android:label="fragment_topic"
+        tools:layout="@layout/fragment_topic" >
+        <action
+            android:id="@+id/action_topicFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.kla.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
