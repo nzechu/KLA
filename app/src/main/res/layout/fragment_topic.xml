@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="15dp"
 
-            android:text="Kotlin is a relatively new programming language developed by JetBrains for modern multiplatform applications. Nowadays, Kotlin is widely used for Android development instead of Java. It is because Kotlin is safe, concise, and fun to read and write. The content is divided into various topics with simple and useful examples." />
+            android:text="Kotlin is a relatively new programming language developed by JetBrains. Nowadays, Kotlin is widely used for Android development instead of Java. The content is divided into various topics with simple and useful examples." />
 
 
     </LinearLayout>

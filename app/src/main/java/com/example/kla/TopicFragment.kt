@@ -14,17 +14,15 @@ import com.example.kla.databinding.FragmentTopicBinding
 
 
 class TopicFragment : Fragment() {
-    //private lateinit var itemSelector: Selector
 
-    // Use the 'by activityViewModels()' Kotlin property delegate
-    // from the fragment-ktx artifact
 
 
 
     private var _binding: FragmentTopicBinding? = null
     private val binding get() = _binding!!
     private lateinit var navCon : NavController
-  //private var topicViewModel: TopicViewModel? = null
+
+
 
 
 
@@ -36,9 +34,13 @@ class TopicFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentTopicBinding.inflate(inflater, container, false)
         navCon = NavHostFragment.findNavController(this)
+
+        //sharedViewModel = ViewModelProvider(this)[SharedViewModel::class.java]
+
+
 
 
 
@@ -48,20 +50,40 @@ class TopicFragment : Fragment() {
         newRecyclerView.setHasFixedSize(true)
 
 
-        val myDataSet = DataSource().loadTopics()
+        val myDataSet = DataSource.loadTopics
+
+
         var adapter = TopicAdapter(myDataSet)
         newRecyclerView.adapter = adapter
+
+        //sharedViewModel!!.topics.observe(viewLifecycleOwner, Observer{ var adapter = TopicAdapter(it)})
 
 
 
         adapter.setOnItemClickListener(object: TopicAdapter.onItemClickedListener{
             override fun onItemClick(position: Int) {
 
+                    val title = myDataSet[position]
 
-                //Toast.makeText(context,"you clicked on item no. $position", Toast.LENGTH_SHORT).show()
 
-                navCon.navigate(R.id.action_topicFragment_to_detailFragment)
-            }
+                    val bundle = Bundle()
+                    bundle.putString("TITLE", title.textLine)
+                    bundle.putString("DESCRIPTION", title.detail)
+
+                navCon.navigate(R.id.action_topicFragment_to_detailFragment,bundle)
+
+                }
+
+
+
+
+
+
+
+
+
+
+
 
         })
 

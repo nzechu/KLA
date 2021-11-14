@@ -23,8 +23,8 @@ class TopicAdapter (private val topicText : List<Topic>):
 
     class TopicViewHolder(itemView: View, listener: onItemClickedListener) : RecyclerView.ViewHolder(itemView){
 
-        val topicText = itemView.findViewById<TextView>(R.id.topicText)
-        val topicImage = itemView.findViewById<ImageView>(R.id.imageView)
+        val topicText: TextView = itemView.findViewById(R.id.topicText)
+        val topicImage: ImageView = itemView.findViewById(R.id.imageView)
 
         init {
             itemView.setOnClickListener {
@@ -41,7 +41,8 @@ class TopicAdapter (private val topicText : List<Topic>):
     override fun onBindViewHolder(holder: TopicViewHolder, position: Int) {
         val item = topicText[position]
         holder.topicImage.setImageResource(item.imageId)
-        holder.topicText.text = item.textLine 
+        holder.topicText.text = item.textLine
+
 
     }
 

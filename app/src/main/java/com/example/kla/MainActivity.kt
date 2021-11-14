@@ -15,11 +15,14 @@ class MainActivity : AppCompatActivity() {
 
         val navHost = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navCon = navHost.navController
+
+
     }
     override fun onSupportNavigateUp(): Boolean {
         return navCon.navigateUp() || super.onSupportNavigateUp()
     }
 
     override fun onBackPressed() {
+        super.onBackPressed()
     }
 }

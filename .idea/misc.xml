@@ -6,13 +6,16 @@
         <entry key="..\:/Users/USER/KLA/app/src/main/res/drawable/custom_background.xml" value="0.2203125" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/drawable/custom_background2.xml" value="0.1125" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/USER/KLA/app/src/main/res/drawable/ic_book_24.xml" value="0.1109375" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/fragment_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/fragment_sign_in.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/fragment_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/fragment_topic.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/KLA/app/src/main/res/layout/list_items.xml" value="0.25" />
+        <entry key="..\:/Users/USER/KLA/app/src/main/res/menu/menu.xml" value="0.22" />
       </map>
     </option>
   </component>
